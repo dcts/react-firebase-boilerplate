@@ -1,3 +1,13 @@
+# React-Firebase-Boilerplate
+**Command History**
+```bash
+npx create-react-app react-firebase-boilerplate --use-npm
+npm install react-router-dom
+npm install react-icons
+npm install firebase
+npm install node-sass
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
