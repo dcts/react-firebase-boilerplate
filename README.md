@@ -6,7 +6,21 @@ npm install react-router-dom
 npm install react-icons
 npm install firebase
 npm install node-sass
+
+# initialize firebase connection
+firebase login
+firebase init # => choose functions + hosting without github actions
+# => follow instructions
+# => select javascript
+# => no github actions
 ```
+
+# TODO:
+- [x] connect to firebase functions
+- [x] adapt .eslintrc.json
+- [ ] setup babel (backend) to use cutting edge node version
+- [ ] setup services and functions folders
+- [ ] setup dev environment
 
 # Getting Started with Create React App
 
