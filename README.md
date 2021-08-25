@@ -21,6 +21,11 @@ firebase init # => choose functions + hosting without github actions
 - [ ] setup babel (backend) to use cutting edge node version
 - [ ] setup services and functions folders
 - [ ] setup dev environment
+- [ ] FRONTEND setup router
+- [ ] FRONTEND setup config fonts
+- [ ] FRONTEND setup config colors
+- [ ] FRONTEND setup pageComponent with :id
+- [ ] FRONTEND setup 404 page
 
 # Getting Started with Create React App
 
