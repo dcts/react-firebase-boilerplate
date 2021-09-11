@@ -24,3 +24,6 @@ yarn-error.log*
 
 # VSCode history plugin
 .history
+
+# firebase admin credentials
+backend/credentials/*

@@ -1,0 +1,26 @@
+
+==============================
+BACKEND ENVIRONMENT PLAYGROUND
+==============================                                                                              
+
+
+=== LOADED EXTERNAL PACKAGES ===
+  axios
+  dotenv
+
+==== DATABASE & STORAGE ==
+  db                      : db.collection("users").limit(10).get()
+  FirebaseTimestamp       : FirebaseTimestamp.toDate(userDoc.get("createdAt"))
+  storagePROD             : storagePROD.uploadFromUrl(url, "_testFolder", "my-file-name")
+  UrlHelper               : UrlHelper.imageExists(url)
+                          : UrlHelper.followRedirections(url)
+                          : UrlHelper.getBlob(url)
+
+==== HELPERS =============
+  RandomToken             : RandomToken.generate(20) // => 1Dech293vifv824g7fvk
+
+
+🎉🎉🎉  DEV ENVIRONMENT SUCCESSFULLY LOADED  🎉🎉🎉
+
+💪 You are amazing! 💯
+
