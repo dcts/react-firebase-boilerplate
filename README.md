@@ -20,7 +20,7 @@ firebase init # => choose functions + hosting without github actions
 - [x] adapt .eslintrc.json
 - [ ] setup babel (backend) to use cutting edge node version
 - [x] setup services and functions folders
-- [ ] setup dev environment
+- [x] setup dev environment
 - [ ] FRONTEND setup router
 - [ ] FRONTEND setup config fonts
 - [ ] FRONTEND setup config colors
