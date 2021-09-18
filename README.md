@@ -27,6 +27,12 @@ firebase init # => choose functions + hosting without github actions
 - [ ] FRONTEND setup pageComponent with :id
 - [ ] FRONTEND setup 404 page
 
+# Deploy Frontend
+```bash
+npm run deploy # builds react project and deploys to firebase hosting
+```
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
