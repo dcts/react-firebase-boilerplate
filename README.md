@@ -1,105 +1,30 @@
 # React-Firebase-Boilerplate
-**Command History**
+
+## Setup Guide
+
+- [ ] create a new firebase project, make sure firestore and storage are initialized
+- [ ] export admin sdk credentials file from firebase console and upload to folder backend/credentials
+- [ ] set `credentialFileName` in `init-dev-env.js`
+- [ ] set `storageBucketName` in `init-dev-env.js` by opening firebase console => storage => copy the storage id
+- [ ] test if the dev environment loads
+- [ ] connect firebase: `firebase login`, then run `firebase init` and choose `existing project`.
+- [ ] run `npm run deploy` to deploy the frontend.
+- [ ] run `firebase deploy --only functions` to deploy testfunctions
+- [ ] you are ready to go! 🥳
+
+## Deploy Frontend
+
+```bash
+npm run deploy # builds react project and deploys to firebase hosting
+```
+
+## Command History
+**all bash commands used to create this boilerplate**
+(**(CREATED WITH CREATE REACT APP)**)[https://github.com/facebook/create-react-app]
 ```bash
 npx create-react-app react-firebase-boilerplate --use-npm
 npm install react-router-dom
 npm install react-icons
 npm install firebase
 npm install node-sass
-
-# initialize firebase connection
-firebase login
-firebase init # => choose functions + hosting without github actions
-# => follow instructions
-# => select javascript
-# => no github actions
 ```
-
-# TODO:
-- [x] connect to firebase functions
-- [x] adapt .eslintrc.json
-- [ ] setup babel (backend) to use cutting edge node version
-- [x] setup services and functions folders
-- [x] setup dev environment
-- [ ] FRONTEND setup router
-- [ ] FRONTEND setup config fonts
-- [ ] FRONTEND setup config colors
-- [ ] FRONTEND setup pageComponent with :id
-- [ ] FRONTEND setup 404 page
-
-# Deploy Frontend
-```bash
-npm run deploy # builds react project and deploys to firebase hosting
-```
-
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
