@@ -28,3 +28,6 @@ yarn-error.log*
 # firebase admin credentials
 backend/credentials/*
 .firebase/*
+
+# DOTNEV
+*.env

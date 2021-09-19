@@ -3,24 +3,23 @@ import Home from "./Home";
 import Error404 from "./Error404";
 
 // firebase SDK
-import firebase from "firebase/app";
-import "firebase/functions";
-import "firebase/analytics";
-// import { useState, useEffect } from "react";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getFunctions } from 'firebase/functions';
 
-// Initialize Firebase
-// @TODO_DEVELOPER
-const firebaseConfig = {
+const dotenv = require("dotenv");
+dotenv.config();
+
+// Initialize Firebase Functions
+const app = initializeApp({
   apiKey: "AIzaSyCrd7MbN-smPNSlHwrr2lq1wY4v1dJz-pU",
   authDomain: "react-firebase-boilerpla-fc860.firebaseapp.com",
   projectId: "react-firebase-boilerpla-fc860",
-  storageBucket: "react-firebase-boilerpla-fc860.appspot.com",
-  messagingSenderId: "179704017243",
   appId: "1:179704017243:web:e767e80c2f5bc382476a7e",
-  measurementId: "G-8LZP1MPK3C",
-};
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+  measurementId: "G-8LZP1MPK3C"
+});
+const analytics = getAnalytics(app); // initialize analytics
+const functions = getFunctions(app); // all your callable functions are now accessible fron your frontend
 
 const App = () => {
   return (
