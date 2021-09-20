@@ -8,7 +8,7 @@ const Home = () => {
         <li>create a new webapp for this project, and update config in `src/components/App.js`</li>
         <li>export admin sdk credentials file from firebase console and upload to folder backend/credentials</li>
         <li>set `credentialFileName` in `init-dev-env.js`</li>
-        <li>set `storageBucketName` in `init-dev-env.js` by opening firebase console => storage => copy the storage id</li>
+        <li>set `storageBucketName` in `init-dev-env.js` by opening firebase console =&gt; storage =&gt; copy the storage id</li>
         <li>test if the dev environment loads</li>
         <li>connect firebase: `firebase login`, then run `firebase init` and choose `existing project`.</li>
         <li>run `npm run deploy` to deploy the frontend.</li>
