@@ -2,7 +2,6 @@
 
 ## Setup Guide
 
-- [ ] update firebase config inside `src/App.js`
 - [ ] create a new firebase project, make sure firestore and storage are initialized
 - [ ] create a new webapp for this project, and update config in `src/components/App.js`
 - [ ] export admin sdk credentials file from firebase console and upload to folder backend/credentials
