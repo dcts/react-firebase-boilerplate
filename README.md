@@ -9,6 +9,7 @@
 - [ ] set `storageBucketName` in `init-dev-env.js` by opening firebase console => storage => copy the storage id
 - [ ] test if the dev environment loads
 - [ ] connect firebase: `firebase login`, then run `firebase init` and choose `existing project`.
+- [ ] replace project name inside .firebaserc
 - [ ] run `npm run deploy` to deploy the frontend.
 - [ ] run `firebase deploy --only functions` to deploy testfunctions
 - [ ] you are ready to go! 🥳
