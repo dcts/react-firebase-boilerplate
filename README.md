@@ -10,6 +10,7 @@
 - [ ] test if the dev environment loads
 - [ ] connect firebase: `firebase login`, then run `firebase init` and choose `existing project`.
 - [ ] replace project name inside .firebaserc
+- [ ] replace project name inside `package.json`
 - [ ] run `npm run deploy` to deploy the frontend.
 - [ ] run `firebase deploy --only functions` to deploy testfunctions
 - [ ] you are ready to go! 🥳
