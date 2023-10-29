@@ -1,7 +1,7 @@
 const Home = () => {
   return (
     <div className="home-container">
-      <h1><a className="remove-all-link-styling underscore" href="https://github.com/dcts" target="_blank">DCTS</a> Firebase React BoilerPlate</h1>
+      <h1><a className="remove-all-link-styling underscore" href="https://github.com/dcts" target="_blank" rel="noreferrer">DCTS</a> Firebase React BoilerPlate</h1>
       <h2>Next Steps</h2>
       <ul className="todo-list">
         <li>run npm install</li>
