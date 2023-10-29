@@ -19,7 +19,7 @@ const app = initializeApp({
   measurementId: "G-8LZP1MPK3C"
 });
 const analytics = getAnalytics(app); // initialize analytics
-const functions = getFunctions(app); // all your callable functions are now accessible fron your frontend
+const functions = getFunctions(app); // all your callable functions are now accessible from your frontend
 
 const App = () => {
   return (
