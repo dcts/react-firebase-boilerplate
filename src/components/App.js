@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Error404 from "./Error404";
 
@@ -21,17 +21,11 @@ const functions = getFunctions(app); // all your callable functions are now acce
 const App = () => {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/404">
-          <Error404 />
-        </Route>
-        <Route path="*">
-          <Error404 />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/404" element={<Error404 />} />
+        <Route path="*" element={<Error404 />} />
+      </Routes>
     </Router>
   );
 };
